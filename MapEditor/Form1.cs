@@ -15,6 +15,9 @@ namespace MapEditor
         public Form1()
         {
             InitializeComponent();
+            ImageTile x = new ImageTile(@"C:\Users\ThinkKING\Downloads\P04-1\lv1.png", 48, 12);
+            x.GenerateTiles(@"C:\Users\ThinkKING\Downloads\P04-1");
+            x.ConvertTilesetToID(x.GetImage(), @"C:\Users\ThinkKING\Downloads\P04-1");
         }
     }
 }
